@@ -17,7 +17,7 @@ s:tab("general", translate("General Options"))
 s:tab("advanced", translate("Advanced Options"))
 s:tab("dashboard", translate("Dashboard Options"))
 
-o = s:taboption("general", Flag, "disabled", translate("Disable"))
+o = s:taboption("general", Flag, "enabled", translate("Enabled"))
 
 o = s:taboption("general", Value, "client_file", translate("Client file"))
 o.default = "/usr/bin/frps"
