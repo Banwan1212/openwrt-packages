@@ -5,7 +5,7 @@ function index()
 	if not nixio.fs.access("/etc/config/autotimeset") then
 		return
 	end
-        entry({"admin", "system"}, firstchild(), "System", 44).dependent = false
+        entry({"admin", "system"}, firstchild(), "System", 30).dependent = false
         local e = entry({"admin", "system", "autotimeset"}, alias("admin", "system", "autotimeset", "base"), _("Scheduled Setting"), 20)
 	e.dependent = false
 	e.acl_depends = { "luci-app-autotimeset" }
